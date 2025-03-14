@@ -5,8 +5,14 @@ def is_palindrome(value: str) -> bool:
     :param value: A string
     :return: A boolean
     """
-    rstr = value[::-1]
-    if rstr == value:
-        return True
-    else: return False
+    # turn value into all lowercase
+    small_str = value.lower()
+    #turn lower into strings without spaces
+    str_nspace = small_str.replace(" ","")
+    # reverse the string without spaces
+    rvrs = str_nspace[::-1]
+    #compare reversed string without spaces with string without spaces
+    return rvrs == str_nspace
+
+
 
