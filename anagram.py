@@ -9,7 +9,7 @@ def is_anagram(first_string: str, second_string: str) -> bool:
         str2 = sorted(second_string)
         if str1 == str2:
             return True
-        elif first_string == second_string:
+        elif first_string == second_string: #weed out the words that are the exact word
              return False
         else:
             return False
