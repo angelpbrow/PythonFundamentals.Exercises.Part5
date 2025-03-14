@@ -30,7 +30,12 @@ def input_has_substring(str_in: str, sub_str_in: str) -> bool:
     """
     This function determines if the substring exists within the string. Returns True or False.
     """
-    pass  # remove pass statement and implement me
+    if sub_str_in in str_in:
+        return True
+    return False
+
+
+
 
 
 def substring(str_in: str, start: int, stop: int) -> str:
@@ -42,7 +47,9 @@ def substring(str_in: str, start: int, stop: int) -> str:
     start -- starting position of the input parameter to start the substring (inclusive)
     stop -- stopping position of the input parameter to stop the substring (exclusive)
     """
-    pass  # remove pass statement and implement me
+    substr = str_in[start:stop]
+    return substr
+
 
 
 def opposite_case(str_in: str) -> str:
@@ -51,4 +58,6 @@ def opposite_case(str_in: str) -> str:
     Example: 
     When input = "Python" the function returns "pYTHON"
     """
-    pass  # remove pass statement and implement me
+    x = str_in.swapcase()
+    return x
+
