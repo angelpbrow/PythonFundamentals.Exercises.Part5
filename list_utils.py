@@ -20,7 +20,10 @@ def print_list_items(list_in: List) -> None:
     :param list_in: Input list
     :return: None
     """
-    pass  # remove pass statement and implement me
+
+    for word in list_in:
+        print(word)
+
 
 
 def sort_by_commit_count(list_in: List) -> List:
