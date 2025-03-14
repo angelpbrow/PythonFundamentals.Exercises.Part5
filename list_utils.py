@@ -44,8 +44,7 @@ def gen_list_of_nums(n: int) -> List[int]:
     :param n: The number of items the result should contain
     :return: A list of integers
     """
-    pass  # remove pass statement and implement me
-
+    return list(range(n))
 
 def half_list(list_in: List, half: int) -> List:
     """
