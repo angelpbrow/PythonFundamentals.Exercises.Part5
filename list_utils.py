@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional, Any
 from math import ceil
 
 
@@ -10,7 +10,8 @@ def get_item_at_position(list_in: List, pos: int) -> List:
     :param pos: Position of desired item in list_in
     :return: Item in pos
     """
-    pass  # remove pass statement and implement me
+    for i in range(len(list_in)):
+        return list_in[pos]
 
 
 def print_list_items(list_in: List) -> None:
@@ -87,7 +88,7 @@ def concatenate_lists(list_a: List, list_b: List) -> List:
     pass  # remove pass statement and implement me
 
 
-def multiply_list(list_in: List, scalar: int) -> List:
+def multiply_list(list_in: List, scalar: int) -> Optional[Any]:
     """
     Given a list and an integer, this function will return a new list which is the result of multiplying
     the input list by the value of the scalar.
@@ -96,4 +97,7 @@ def multiply_list(list_in: List, scalar: int) -> List:
     :param scalar: An integer
     :return: A list
     """
+    for range in list_in:
+        newlist_in = range * scalar
+        return list(newlist_in)
     pass  # remove pass statement and implement me
