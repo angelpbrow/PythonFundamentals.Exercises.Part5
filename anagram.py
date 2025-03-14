@@ -9,8 +9,10 @@ def is_anagram(first_string: str, second_string: str) -> bool:
         str2 = sorted(second_string)
         if str1 == str2:
             return True
+        elif first_string == second_string:
+             return False
         else:
-            False
+            return False
 
 
 
