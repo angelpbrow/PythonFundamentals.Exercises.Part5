@@ -34,7 +34,10 @@ def sort_by_commit_count(list_in: List) -> List:
     :param list_in: A list where each entry is a list containing a name and the commit count corresponding to a user
     :return: The same list sorted in ascending order based on the commit count
     """
-    pass  # remove pass statement and implement me
+    list_out = list_in.sort()
+    return list(list_out)
+
+
 
 
 def gen_list_of_nums(n: int) -> List[int]:
@@ -64,8 +67,10 @@ def remove_odds(list_in: List[int]) -> None:
 
     :return: None
     """
-    pass  # remove pass statement and implement me
 
+
+    list_in = [x for x in list_in if x % 2 == 0]
+    return list_in
 
 def remove_evens(list_in: List[int]) -> None:
     """
@@ -73,7 +78,10 @@ def remove_evens(list_in: List[int]) -> None:
 
     :return: None
     """
-    pass  # remove pass statement and implement me
+    list_in = [x for x in list_in if x % 2 != 0]
+    return list_in
+
+
 
 
 def concatenate_lists(list_a: List, list_b: List) -> List:
@@ -84,7 +92,8 @@ def concatenate_lists(list_a: List, list_b: List) -> List:
     :param list_b: Another list
     :return: A list containing all elements from list_a and list_b
     """
-    pass  # remove pass statement and implement me
+    list_c = list_a + list_b
+    return list_c
 
 
 def multiply_list(list_in: List, scalar: int) -> Optional[Any]:
@@ -96,7 +105,5 @@ def multiply_list(list_in: List, scalar: int) -> Optional[Any]:
     :param scalar: An integer
     :return: A list
     """
-    for range in list_in:
-        newlist_in = range * scalar
-        return list(newlist_in)
-    pass  # remove pass statement and implement me
+
+    return list_in * scalar
