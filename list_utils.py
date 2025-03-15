@@ -68,9 +68,10 @@ def remove_odds(list_in: List[int]) -> None:
     :return: None
     """
 
-
-    list_in = [x for x in list_in if x % 2 == 0]
-    return list_in
+    for i in range(len(list_in)):
+        if i % 2 != 0:
+            list_in.remove(i)
+    return (list_in)
 
 def remove_evens(list_in: List[int]) -> None:
     """
@@ -78,8 +79,10 @@ def remove_evens(list_in: List[int]) -> None:
 
     :return: None
     """
-    list_in = [x for x in list_in if x % 2 != 0]
-    return list_in
+    for i in range(len(list_in)):
+        if i % 2 == 0:
+            list_in.remove(i)
+    return (list_in)
 
 
 
