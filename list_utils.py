@@ -1,3 +1,4 @@
+
 from typing import List, Optional, Any
 from math import ceil
 
@@ -62,11 +63,14 @@ def half_list(list_in: List, half: int) -> List:
     if len(list_in) % 2 == 0:
         if half == 1:
             list_in2 = list_in[:int (len(list_in)/2)]
-        if half == 2:
+        elif half == 2:
             list_in2 = list_in[int (len(list_in)/2):]
 
     if len(list_in) % 2 != 0:
-        pass
+        if half == 1:
+            list_in2 = list_in[: ceil(len(list_in)/2)]
+        elif half == 2:
+            list_in2 = list_in[ceil((-1 * (len(list_in) + 1)) / 2):]
 
     return list_in2
 
